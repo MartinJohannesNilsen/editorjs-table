@@ -58,7 +58,7 @@ export default class TableBlock {
     this.config = config;
     this.data = {
       withHeadings: this.getConfig('withHeadings', false, data),
-      content: data && data.content ? data.content : []
+      content: data && data.content ? JSON.parse(data.content) : []
     };
     this.table = null;
   }
@@ -135,7 +135,7 @@ export default class TableBlock {
 
     const result = {
       withHeadings: this.data.withHeadings,
-      content: tableContent
+      content: JSON.stringify(tableContent)
     };
 
     return result;

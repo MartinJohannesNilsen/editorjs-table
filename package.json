@@ -1,18 +1,13 @@
 {
-  "name": "@editorjs/table",
+  "name": "@martinjohannesnilsen/editorjs-table",
   "description": "Table for Editor.js",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "license": "MIT",
   "main": "./dist/table.js",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch",
     "lint": "eslint -c ./.eslintrc --ext .js --fix ."
-  },
-  "repository": "https://github.com/editor-js/table",
-  "author": {
-    "name": "CodeX Team",
-    "email": "team@ifmo.su"
   },
   "keywords": [
     "codex",
